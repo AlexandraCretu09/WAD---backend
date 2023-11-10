@@ -52,7 +52,7 @@ public class ContentController {
         }
     }
 
-    @GetMapping("/contentCreation")
+    @GetMapping("/getContentCreation")
     public ResponseEntity<List<ProductDto>> getContentCreationByEmail(@RequestParam("email") String email) {
         //List<ContentCreation> content = repository.findByEmail(email);
 

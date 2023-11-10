@@ -13,4 +13,11 @@ public class ProductDto {
     public String toString() {
         return "ProductDTO{email='" + email + "', type='" + type + "}"; // Include other relevant fields
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public String getType() {
+        return type;
+    }
 }

@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
         private String option1;
         private String option2;
+        private String option3;
         private String fileName;
         private String email;
         private String type;
@@ -35,6 +36,9 @@ import org.springframework.web.multipart.MultipartFile;
         public void setOption2(String option) {
         this.option2 = option;
     }
+        public void setOption3(String option) {
+        this.option3 = option;
+    }
 
         public void setEmail(String email) {
             this.email = email;
@@ -46,5 +50,14 @@ import org.springframework.web.multipart.MultipartFile;
         this.words = words;
     }
         public void setUser(User user) {this.user = user;}
+
+        public String getType(){ return this.type; }
+        public String getOption1(){ return this.option1; }
+        public String getOption2(){ return this.option2; }
+        public String getOption3(){ return this.option3; }
+        public String getEmail(){return this.email;}
+        public int getWords(){return this.words;}
+        public User getUser(){return this.user;}
+        public long getId(){return this.id;}
 }
 

@@ -97,8 +97,8 @@ public class UserController {
     public List<User> getAllUsers() {
         List<User> users = userService.getAllUsers();
 
-        for(User user : users)
-            System.out.println(user);
+        //for(User user : users)
+            //System.out.println(user);
         return users;
     }
     @PutMapping("/updateAdminStatus")
